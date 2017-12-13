@@ -5,8 +5,9 @@
  */
 
 angular.module('StarD.Controllers',[])
-        .controller('RootCtrl',function ($rootScope){})
-        .controller('RegisterCtrl',function (){})
+        .controller('RootCtrl',function ($rootScope){
+            $rootScope.users = [{}];
+        })
 
     .controller('DetailPlaneteCtrl',function ($scope,$http){
         $scope.detail=[];
@@ -18,7 +19,7 @@ angular.module('StarD.Controllers',[])
         });
     }) 
 
-    .controller('listePlaneteCtrl',function ($scope,$http){
+    .controller('ListePlaneteCtrl',function ($scope,$http){
         $scope.detail=[];
 
         $http.get('/HTML5Application/stars.json').then(function(reponse){
@@ -28,9 +29,9 @@ angular.module('StarD.Controllers',[])
         });
     }) 
     
-        .controller('RegisterCtrl',function ($http,$scope){
+        .controller('RegisterCtrl',function ($http,$scope,$rootScope){
             this.register = function($user){
-                window.alert("Register ok !");
+                $rootScope.users.push($user);
             };
             this.reset = function(){
                 $scope.user = {};
