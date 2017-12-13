@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
-</html>
+<div class="container">
+    <form novalidate="" class="simple-form">
+        <div class="row"><div class="col-xs-6">Prénom : </div><div class="col-xs-6"><input ng-model="user.firstname" type="text"></div></div>
+        <div class="row"><div class="col-xs-6">Nom : </div><div class="col-xs-6"><input ng-model="user.name" type="text"></div></div>
+        <div class="row"><div class="col-xs-6">Email : </div><div class="col-xs-6"><input ng-model="user.email" type="email"></div></div>
+        <div class="row"><div class="col-xs-6">Mot de passe : </div><div class="col-xs-6"><input ng-model="user.password" type="password"></div></div>
+        <div class="row"><div class="col-xs-6"><a class="btn btn-default" ng-click="registerCtrl.register(user)">S'enregister</a></div><div class="col-xs-6"><a class="btn btn-default" ng-click="registerCtrl.reset()">Effacer</a></div></div>
+    </form>
+</div>
+
+    

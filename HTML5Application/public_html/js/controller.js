@@ -17,6 +17,15 @@ angular.module('StarD.Controllers',[])
            window.alert("pas juste"); 
         });
     }) 
-    ;
+    
+        .controller('RegisterCtrl',function ($http,$scope){
+            this.register = function($user){
+                window.alert("Register ok !");
+            };
+            this.reset = function(){
+                $scope.user = {};
+            };
+    
+        });
 
 
