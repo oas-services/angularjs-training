@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 13 déc. 2017, 12:10:26
+    Author     : 1
+*/
+
+.panel-heading, .panel-body{
+    text-align: center;
+}
+.panel-body{
+    font-weight: 800;
+}
