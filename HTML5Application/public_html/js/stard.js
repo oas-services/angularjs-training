@@ -7,5 +7,6 @@
 var toto = angular.module('StarD', ['ngRoute']).config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/main', {templateUrl: 'partials/body.html'});
         $routeProvider.when('/calculerDistance', {templateUrl: 'partials/calculerDistance.html'});
+        $routeProvider.when('/register', {templateUrl: 'partials/register.html', controller: 'RegisterCtrl as registerCtrl'});
         $routeProvider.otherwise({redirectTo: '/main'});
     }]);
