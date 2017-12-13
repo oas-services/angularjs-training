@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-var toto = angular.module('MyApp',['ngRoute','MyApp.Controllers']).config(['$routeProvider',function($routeProvider) {
-    $routeProvider.when('/main',{templateUrl:'partials/body.html',controller:'BodyCtrl as bodyCtrl'});
+var toto = angular.module('StarD',['ngRoute']).config(['$routeProvider',function($routeProvider) {
+    $routeProvider.when('/main',{templateUrl:'partials/body.html'});
     $routeProvider.otherwise({redirectTo:'/main'});
 }]);
