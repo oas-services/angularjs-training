@@ -6,6 +6,17 @@
 
 angular.module('StarD.Controllers',[])
         .controller('RootCtrl',function ($rootScope){})
-        .controller('RegisterCtrl',function (){});
+        .controller('RegisterCtrl',function (){})
+
+    .controller('DetailPlaneteCtrl',function ($scope,$http){
+        $scope.detail=[];
+
+        $http.get('/HTML5Application/stars.json').then(function(reponse){
+            $scope.detail=reponse.data;
+        }, function(reponse){
+           window.alert("pas juste"); 
+        });
+    }) 
+    ;
 
 
