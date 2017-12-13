@@ -4,13 +4,17 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html ng-app="MyApp" ng-controller="RootCtrl as rootCtrl">
     <head>
-        <title>TODO supply a title</title>
+        <title>First AngularJS App</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/myApp.js"></script>
+   
     </head>
     <body>
-        <div>TODO write content</div>
+        <div ng-include="'partials/header.html'"></div>
+        <div ng-view=""></div>
+        <div ng-include="'partials/footer.html'"></div>
+        <div ng-include="'partials/menu.html'"></div>
     </body>
 </html>
