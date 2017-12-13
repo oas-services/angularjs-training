@@ -1,11 +1,11 @@
 Detail planete
 <div  ng-controller="DetailPlaneteCtrl as detailPlaneteCtrl">
     <ul>
-        <li>
-          id :   {{selectedPlanete.idPlanete}}
-          nomPlanete :   {{selectedPlanete.nomPlanete}}
-          detailPlanete :   {{selectedPlanete.detailPlanete}}
-          distanceSoleil :   {{selectedPlanete.distanceSoleil}}
+        <li ng-repeat="detail in detail"> Detail planete
+          id :   {{detail.idPlanete}}
+          nomPlanete :   {{detail.nomPlanete}}
+          detailPlanete :   {{detail.detailPlanete}}
+          distanceSoleil :   {{detail.distanceSoleil}}
         </li>
 
     </ul>
