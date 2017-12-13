@@ -17,6 +17,16 @@ angular.module('StarD.Controllers',[])
            window.alert("pas juste"); 
         });
     }) 
+
+    .controller('listePlaneteCtrl',function ($scope,$http){
+        $scope.detail=[];
+
+        $http.get('/HTML5Application/stars.json').then(function(reponse){
+            $scope.detail=reponse.data;
+        }, function(reponse){
+           window.alert("pas juste"); 
+        });
+    }) 
     
         .controller('RegisterCtrl',function ($http,$scope){
             this.register = function($user){
