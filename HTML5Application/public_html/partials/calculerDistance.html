@@ -3,16 +3,19 @@
     <!-- Default panel contents -->
     <div class="panel-heading">Distance entre Planete1 et Planete2 </div>
     <div class="panel-body">
-        <p>{{5116115}}</p>
+        <p>{{form}}</p>
+        <p>DISTANCE : {{distance}}</p>
     </div>
 
     <!-- Table -->
     <table class="table">
-
-        <thead> <tr> <th>ID</th> <th>Planete</th> <th>Distance planete/soleil</th> <th>Sélectionner</th> </tr> </thead>
+        <thead> <tr> <th>ID</th> <th>Planete</th> <th>Distance planete/soleil</th> <th>Sélectionner</th> <th>Détails</th> </tr> </thead>
         <tbody>
-            <tr ng-repeat="detail in Details"> <th scope="row">{{detail.idPlanete}}</th> <td>{{detail.nomPlanete}}</td> <td>{{ detail.distanceSoleil}}</td> <td><input type="checkbox" aria-label="..." value="ID"></td><td><button ng-click="listePlaneteCtrl.sendPlanet()" >Detail</button></td> </tr>
-            <tr> <th scope="row">2</th> <td>Venus</td> <td>108 208 930 km</td> <td><input type="checkbox" aria-label="..." value="ID"></td> </tr>
+            <tr ng-repeat="planete in Planetes">
+                <th scope="row">{{planete.idPlanete}}</th> <td>{{planete.nomPlanete}}</td> <td>{{planete.distanceSoleil}}</td>
+                <td><input ng-click="listePlaneteCtrl.selectPlanete(planete)" type="checkbox" aria-label="..." value="yes"></td>
+                <td><button >Detail</button></td>
+            </tr>
         </tbody>
     </table>
 </div>

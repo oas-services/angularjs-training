@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-var toto = angular.module('StarD', ['ngRoute','StarD.Controllers']).config(['$routeProvider', function($routeProvider) {
+var toto = angular.module('StarD', ['ngRoute', 'StarD.Controllers']).config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/main', {templateUrl: 'partials/body.html'});
         $routeProvider.when('/calculerDistance', {templateUrl: 'partials/calculerDistance.html', controller: 'ListePlaneteCtrl as listePlaneteCtrl'});
         $routeProvider.when('/register', {templateUrl: 'partials/register.html', controller: 'RegisterCtrl as registerCtrl'});
-        $routeProvider.when('/detailPlanete', {templateUrl: 'partials/detailPlanete.html', controller: 'DetailPlaneteCtrl as detailPlaneteCtrl'});
+        $routeProvider.when('/detailPlanete', {templateUrl: 'partials/detailPlanete.html', });
         $routeProvider.otherwise({redirectTo: '/main'});
     }]);

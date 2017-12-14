@@ -9,36 +9,36 @@ angular.module('StarD.Controllers', [])
             $rootScope.users = [{}];
         })
 
-        .controller('DetailPlaneteCtrl', function($scope, $http) {
-            $scope.detail = [];
-
-            $http.get('/HTML5Application/stars.json').then(function(reponse) {
-                $scope.detail = reponse.data;
-            }, function(reponse) {
-                window.alert("pas juste");
-            });
-
-        })
-
-
         .controller('ListePlaneteCtrl', function($scope, $http) {
-            $scope.detail = [];
-
+            $scope.Planetes = [];
+            $scope.form = [];
             $http.get('/HTML5Application/stars.json').then(function(reponse) {
-                $scope.detail = reponse.data;
+                $scope.Planetes = reponse.data;
             }, function(reponse) {
                 window.alert("pas juste");
             });
+            this.selectPlanete = function($planete) {
+                $scope.form.push($planete);
+                alert($scope.form.length);
+                if ($scope.form.length > 2)
+                {
+                    alert("Vous devez selectionner au minimum 2 planetes");
+
+                } else {
+                    $scope.distance = $scope.form[0].distancePlanete;
+                }
+
+
+            }
         })
 
-        .controller('RegisterCtrl', function($http, $scope, $rootScope) {
+        .controller('RegisterCtrl', function($scope, $rootScope) {
             this.register = function($user) {
                 $rootScope.users.push($user);
             };
             this.reset = function() {
                 $scope.user = {};
             };
-
         });
 
 
