@@ -11,7 +11,7 @@
 
         <thead> <tr> <th>ID</th> <th>Planete</th> <th>Distance planete/soleil</th> <th>Sélectionner</th> </tr> </thead>
         <tbody>
-            <tr ng-repeat="detail in details"> <th scope="row">{{detail.idPlanete}}</th> <td>{{detail.nomPlanete}}</td> <td>{{ detail.distanceSoleil}}</td> <td><input type="checkbox" aria-label="..." value="ID"></td><td><button ng-click="listePlaneteCtrl.sendPlanet()" >Detail</button></td> </tr>
+            <tr ng-repeat="detail in Details"> <th scope="row">{{detail.idPlanete}}</th> <td>{{detail.nomPlanete}}</td> <td>{{ detail.distanceSoleil}}</td> <td><input type="checkbox" aria-label="..." value="ID"></td><td><button ng-click="listePlaneteCtrl.sendPlanet()" >Detail</button></td> </tr>
             <tr> <th scope="row">2</th> <td>Venus</td> <td>108 208 930 km</td> <td><input type="checkbox" aria-label="..." value="ID"></td> </tr>
         </tbody>
     </table>
