@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 13 déc. 2017, 12:42:42
+    Author     : oandrade
+*/
+
+.panel-heading, .panel-body{
+    text-align: center;
+}
+.panel-body{
+    font-weight: 800;
+}
+
+body{
+    background-image: url(../img/stars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+div {
+    background-color: #ffffffbf;
+}
