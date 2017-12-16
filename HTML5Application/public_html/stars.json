@@ -1,68 +1,68 @@
 [
-{
-	"idPlanete": 1,
+    {
+        "idPlanete": 1,
         "nomPlanete": "Mercure",
-	"detailPlanete": "Mercure.......",
-        "distanceSoleil": 57909175
-
-},
-{
-	"idPlanete": 2,
+        "detailPlanete": "Mercure.......",
+        "distanceSoleil": 57909175,
+        "checked": false
+    },
+    {
+        "idPlanete": 2,
         "nomPlanete": "Venus",
-	"detailPlanete": "Venus.......",
-        "distanceSoleil": 108208930
-
-},
-{
-	"idPlanete": 3,
+        "detailPlanete": "Venus.......",
+        "distanceSoleil": 108208930,
+        "checked": false
+    },
+    {
+        "idPlanete": 3,
         "nomPlanete": "Terre",
-	"detailPlanete": "Terre.......",
-        "distanceSoleil": 149597890
-
-},
-{
-	"idPlanete": 4,
+        "detailPlanete": "Terre.......",
+        "distanceSoleil": 149597890,
+        "checked": false
+    },
+    {
+        "idPlanete": 4,
         "nomPlanete": "Mars",
-	"detailPlanete": "Mars.......",
-        "distanceSoleil": 227936640
-
-},
-{
-	"idPlanete": 5,
+        "detailPlanete": "Mars.......",
+        "distanceSoleil": 227936640,
+        "checked": false
+    },
+    {
+        "idPlanete": 5,
         "nomPlanete": "Jupiter",
-	"detailPlanete": "Jupiter.......",
-        "distanceSoleil": 778412010
-
-},
-{
-	"idPlanete": 6,
+        "detailPlanete": "Jupiter.......",
+        "distanceSoleil": 778412010,
+        "checked": false
+    },
+    {
+        "idPlanete": 6,
         "nomPlanete": "Saturne",
-	"detailPlanete": "Saturne.......",
-        "distanceSoleil": 1426725400
-
-},
-{
-	"idPlanete": 7,
+        "detailPlanete": "Saturne.......",
+        "distanceSoleil": 1426725400,
+        "checked": false
+    },
+    {
+        "idPlanete": 7,
         "nomPlanete": "Uranus",
-	"detailPlanete": "Uranus.......",
-        "distanceSoleil": 2870972200
-
-},
-{
-	"idPlanete": 8,
+        "detailPlanete": "Uranus.......",
+        "distanceSoleil": 2870972200,
+        "checked": false
+    },
+    {
+        "idPlanete": 8,
         "nomPlanete": "Neptune",
-	"detailPlanete": "Neptune.......",
-        "distanceSoleil": 4498252900
-
-}
-,
-{
-	"idPlanete": 9,
+        "detailPlanete": "Neptune.......",
+        "distanceSoleil": 4498252900,
+        "checked": false
+    }
+    ,
+    {
+        "idPlanete": 9,
         "nomPlanete": "Pluton",
-	"detailPlanete": "Pluton.......",
-        "distanceSoleil": 5906376200
-
-}
+        "detailPlanete": "Pluton.......",
+        "distanceSoleil": 5906376200,
+        "checked": false
+    }
 
 
 ]

@@ -9,8 +9,11 @@ and open the template in the editor.
         <title>StarD - Distance entre deux planetes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo/stard-fav.png">
         <script src="js/angular.min.js"></script>
+
         <script src="js/angular-route.min.js"></script>
+
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/controller.js"></script>
@@ -18,11 +21,30 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/stard.css">
+
+
+
+        <script src="js/icheck.min.js"></script>
+        <link href="css/skins/futurico/futurico.css" rel="stylesheet">
+
+        <script>
+            $(document).ready(function() {
+                $('input').iCheck({
+                    checkboxClass: 'icheckbox_futurico',
+                    radioClass: 'iradio_futurico',
+                    increaseArea: '20%' // optional
+                });
+            });
+        </script>
     </head>
     <body>
-        <div ng-include="'partials/header.html'"></div>
-        <div ng-view=""></div>
-        <div ng-include="'partials/footer.html'"></div>
-        <div ng-include="'partials/menu.html'"></div>
+        <div class="container"> <!-- .container-fluid   for fullwidth -->
+            <div ng-include="'partials/header.html'"></div>
+            <div ng-view=""></div>
+            <div ng-include="'partials/footer.html'"></div>
+            <div ng-include="'partials/menu.html'"></div>
+        </div>
+
     </body>
+
 </html>

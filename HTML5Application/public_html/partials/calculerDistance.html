@@ -1,21 +1,31 @@
 
 <div class="panel panel-default">
     <!-- Default panel contents -->
-    <div class="panel-heading">Distance entre Planete1 et Planete2 </div>
+    <div class="panel-heading">Calcul de distance entre deux planetes </div>
     <div class="panel-body">
-        <p>{{form}}</p>
-        <p>DISTANCE : {{distance}}</p>
+        <div class="row">
+            <div class="col-md-4"><br>{{form[0].nomPlanete}}</div>
+            <div class="col-md-4">{{distance| number }} {{ unitekm}}<br/><br/>{{distanceUA| number }} {{uniteUA}} </div>
+            <div class="col-md-4"><br>{{form[1].nomPlanete}}</div>
+        </div>
     </div>
 
     <!-- Table -->
     <table class="table">
         <thead> <tr> <th>ID</th> <th>Planete</th> <th>Distance planete/soleil</th> <th>Sélectionner</th> <th>Détails</th> </tr> </thead>
         <tbody>
-            <tr ng-repeat="planete in Planetes">
-                <th scope="row">{{planete.idPlanete}}</th> <td>{{planete.nomPlanete}}</td> <td>{{planete.distanceSoleil}}</td>
-                <td><input ng-click="listePlaneteCtrl.selectPlanete(planete)" type="checkbox" aria-label="..." value="yes"></td>
-                <td><button >Detail</button></td>
+            <tr id="line{{planete.idPlanete}}" ng-repeat="planete in Planetes">
+                <th scope="row">{{planete.idPlanete}}</th> <td>{{planete.nomPlanete}}</td> <td>{{planete.distanceSoleil}} km</td>
+                <td><input id="input{{planete.idPlanete}}" ng-model="planete.checked"  ng-change="listePlaneteCtrl.selectPlanete(planete)" type="checkbox" aria-label="..." value="yes"></td>
+                <td class="bs-glyphicons">
+                    <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+                    <!--<button >Detail</button>-->
+                </td>
             </tr>
         </tbody>
     </table>
+    <center><h5>{{form}}</h5>
+        <hr/>
+        <h4>{{ historique}}</h4>
+        <p>TEST : {{chkbox}}</p></center>
 </div>

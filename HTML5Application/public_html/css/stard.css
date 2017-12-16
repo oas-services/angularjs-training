@@ -10,9 +10,11 @@ and open the template in the editor.
 
 .panel-heading, .panel-body{
     text-align: center;
+    font-size: 1.2em;
 }
 .panel-body{
     font-weight: 800;
+    font-size: 1.4em;
 }
 
 body{
@@ -24,4 +26,20 @@ body{
 
 div {
     background-color: #ffffffbf;
+}
+
+.row{
+    height: 87px;
+
+}
+
+.lineSelect{
+    transition: all linear 0.5s;
+    background-color: #2a2a2a;
+    color: white;
+}
+.lineUnSelect{
+    transition: all linear 0.5s;
+    background-color: white;
+    color: black;
 }
