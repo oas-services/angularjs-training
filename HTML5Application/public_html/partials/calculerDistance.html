@@ -4,9 +4,9 @@
     <div class="panel-heading">Calcul de distance entre deux planetes </div>
     <div class="panel-body">
         <div class="row">
-            <div class="col-md-4"><br>{{form[0].nomPlanete}}</div>
+            <div class="col-md-4"><br><img class="imgplanete imgPlaneteLeft" src="{{form[0].img}}">   {{form[0].nomPlanete}}</div>
             <div class="col-md-4">{{distance| number }} {{ unitekm}}<br/><br/>{{distanceUA| number }} {{uniteUA}} </div>
-            <div class="col-md-4"><br>{{form[1].nomPlanete}}</div>
+            <div class="col-md-4"><br>{{form[1].nomPlanete}}  <img class="imgplanete imgPlaneteRight" src="{{form[1].img}}"></div>
         </div>
     </div>
 

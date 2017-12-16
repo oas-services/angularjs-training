@@ -4,56 +4,64 @@
         "nomPlanete": "Mercure",
         "detailPlanete": "Mercure.......",
         "distanceSoleil": 57909175,
-        "checked": false
+        "checked": false,
+        "img": "img/planetes/mercure.png"
     },
     {
         "idPlanete": 2,
         "nomPlanete": "Venus",
         "detailPlanete": "Venus.......",
         "distanceSoleil": 108208930,
-        "checked": false
+        "checked": false,
+        "img": "img/planetes/venus.png"
     },
     {
         "idPlanete": 3,
         "nomPlanete": "Terre",
         "detailPlanete": "Terre.......",
         "distanceSoleil": 149597890,
-        "checked": false
+        "checked": false,
+        "img": "img/planetes/terre.png"
     },
     {
         "idPlanete": 4,
         "nomPlanete": "Mars",
         "detailPlanete": "Mars.......",
         "distanceSoleil": 227936640,
-        "checked": false
+        "checked": false,
+        "img": "img/planetes/mars.png"
     },
     {
         "idPlanete": 5,
         "nomPlanete": "Jupiter",
         "detailPlanete": "Jupiter.......",
         "distanceSoleil": 778412010,
-        "checked": false
+        "checked": false,
+        "img": "img/planetes/jupiter.png"
     },
     {
         "idPlanete": 6,
         "nomPlanete": "Saturne",
         "detailPlanete": "Saturne.......",
         "distanceSoleil": 1426725400,
-        "checked": false
+        "checked": false,
+        "img": "img/planetes/saturne.png"
     },
     {
         "idPlanete": 7,
         "nomPlanete": "Uranus",
         "detailPlanete": "Uranus.......",
         "distanceSoleil": 2870972200,
-        "checked": false
+        "checked": false,
+        "img": "img/planetes/uranus.png"
     },
     {
         "idPlanete": 8,
         "nomPlanete": "Neptune",
         "detailPlanete": "Neptune.......",
         "distanceSoleil": 4498252900,
-        "checked": false
+        "checked": false,
+        "img": "img/planetes/neptune.png"
     }
     ,
     {
@@ -61,7 +69,8 @@
         "nomPlanete": "Pluton",
         "detailPlanete": "Pluton.......",
         "distanceSoleil": 5906376200,
-        "checked": false
+        "checked": false,
+        "img": "img/planetes/pluton.png"
     }
 
 

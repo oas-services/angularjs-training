@@ -8,6 +8,15 @@ and open the template in the editor.
     Author     : oandrade
 */
 
+
+body{
+    margin-bottom: 100px;
+}
+
+.panel-heading{
+    background-image: linear-gradient(to bottom,#0b0b0b 0,#2c0000 100%)!important;
+    color: white!important;
+}
 .panel-heading, .panel-body{
     text-align: center;
     font-size: 1.2em;
@@ -33,9 +42,21 @@ div {
 
 }
 
+.imgplanete{
+    width: 40px;
+}
+.imgPlaneteLeft{
+    float: left;
+    margin: -5px 0 0 61px;
+}
+.imgPlaneteRight{
+    float: right;
+    margin: -5px 61px 0 0px;
+}
+
 .lineSelect{
     transition: all linear 0.5s;
-    background-color: #2a2a2a;
+    background-color: black;
     color: white;
 }
 .lineUnSelect{
