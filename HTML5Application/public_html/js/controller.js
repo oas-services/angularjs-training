@@ -22,22 +22,16 @@ angular.module('StarD.Controllers', [])
             });
 
             function setStyle($planete) {
-                //document.getElementById('line' + $planete.idPlanete).style.fontWeight = 600;
                 document.getElementById('line' + $planete.idPlanete).className = "lineSelect";
-                //document.getElementById('line' + $planete.idPlanete).style.color = 'white';
             }
             function unStyle($planete) {
-                //document.getElementById('line' + $planete.idPlanete).style.fontWeight = 400;
                 document.getElementById('line' + $planete.idPlanete).className = "lineUnSelect";
-                //document.getElementById('line' + $planete.idPlanete).style.backgroundColor = 'white';
-                //document.getElementById('line' + $planete.idPlanete).style.color = 'black';
             }
 
             this.selectPlanete = function($planete) {
-
+                console.log($scope.form);
                 if ($planete.checked) { //If it is checked
-                    console.log('checked');
-                    console.log($scope.form);
+
                     $scope.form.push($planete);
                     setStyle($planete);
                     if ($scope.form.length === 2) // if 2 planets selected
@@ -51,11 +45,12 @@ angular.module('StarD.Controllers', [])
                         unStyle($planete);
                     }
                 } else { //if uncheck input remove line on table
-                    console.log('uncheck');
                     unStyle($planete);
                     $scope.form.splice($scope.form.length - 1, 1);
-                    $scope.distance = 0;
-                    $scope.distanceUA = 0;
+                    $scope.distance = null;
+                    $scope.distanceUA = null;
+                    $scope.unitekm = null;
+                    $scope.uniteUA = null;
                 }
             };
 

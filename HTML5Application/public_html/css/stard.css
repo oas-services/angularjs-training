@@ -55,12 +55,12 @@ div {
 }
 
 .lineSelect{
-    transition: all linear 0.5s;
+    transition: all linear 1s;
     background-color: black;
     color: white;
 }
 .lineUnSelect{
-    transition: all linear 0.5s;
+    transition: all linear 1s;
     background-color: white;
     color: black;
 }
