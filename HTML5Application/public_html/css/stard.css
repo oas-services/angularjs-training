@@ -37,26 +37,27 @@ div {
     background-color: #ffffffbf;
 }
 
-.row{
-    height: 87px;
-
+.resultat{
+    background-color: #f0f0f0;
+    border-radius: 0px;
+    padding: 8px 0px 8px 0px;
 }
 
 .imgplanete{
     width: 40px;
 }
-.imgPlaneteLeft{
-    float: left;
-    margin: -5px 0 0 61px;
+
+.col-md-4{
+    min-height: 72px;
 }
-.imgPlaneteRight{
-    float: right;
-    margin: -5px 61px 0 0px;
+.col-md-6{
+    line-height: 72px;
 }
 
+
 .lineSelect{
-    transition: all linear 1s;
-    background-color: black;
+    transition: all linear 0.8s;
+    background-color: #202020;
     color: white;
 }
 .lineUnSelect{

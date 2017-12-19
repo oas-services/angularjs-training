@@ -25,28 +25,37 @@ angular.module('StarD.Controllers', [])
                 document.getElementById('line' + $planete.idPlanete).className = "lineSelect";
             }
             function unStyle($planete) {
-                document.getElementById('line' + $planete.idPlanete).className = "lineUnSelect";
+                document.getElementById('line' + $planete.idPlanete).className = "lineUnSelect"; //ADD CLASS "lineUnSelect"
+                document.getElementById('input' + $planete.idPlanete).checked = false;           //UNCHECK INPUT
+                $planete.checked = false;                                                        //FORM UNCKECK
             }
 
             this.selectPlanete = function($planete) {
                 console.log($scope.form);
                 if ($planete.checked) { //If it is checked
-
+                    alert('checked');
                     $scope.form.push($planete);
                     setStyle($planete);
-                    if ($scope.form.length === 2) // if 2 planets selected
+                    if ($scope.form.length === 2) // if 2 planets selected -> Calculate
                     {
                         calculateDistance();
                     } else if ($scope.form.length > 2) { // if 3 planets selected
-                        alert("Vous devez selectionner au minimum 2 planetes");
-                        document.getElementById('input' + $planete.idPlanete).checked = false;
-                        $scope.form[2].checked = false;
-                        $scope.form.splice(2, 1);
-                        unStyle($planete);
+                        alert('Length > 2');
+                        unStyle($scope.form[1]);
+                        $scope.form.splice($scope.form.length - 2, 1);
+                        setStyle($planete);
+                        calculateDistance();
                     }
                 } else { //if uncheck input remove line on table
+                    alert('unchecked');
                     unStyle($planete);
-                    $scope.form.splice($scope.form.length - 1, 1);
+                    if ($scope.form[0].idPlanete === $planete.idPlanete) {
+                        $scope.form.splice(0, 1);
+                    } else if ($scope.form[1].idPlanete === $planete.idPlanete) {
+                        $scope.form.splice(1, 1);
+                    } else {
+                        $scope.form.splice(2, 1);
+                    }
                     $scope.distance = null;
                     $scope.distanceUA = null;
                     $scope.unitekm = null;
