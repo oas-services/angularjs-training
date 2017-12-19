@@ -14,7 +14,7 @@ body{
 }
 
 .panel-heading{
-    background-image: linear-gradient(to bottom,#0b0b0b 0,#2c0000 100%)!important;
+    background-image: linear-gradient(to bottom,#0b0b0b 0,#3f3f3f 100%)!important;
     color: white!important;
 }
 .panel-heading, .panel-body{
@@ -65,3 +65,4 @@ div {
     background-color: white;
     color: black;
 }
+

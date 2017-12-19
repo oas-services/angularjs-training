@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-default navbar-fixed-bottom">
+<nav ng-controller="NavigationController" class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -12,13 +12,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#!/main">Accueil</a></li>
-                <li><a href="#!/detailPlanete"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>Détail Planète</a></li>
-                <li><a href="#!/calculerDistance"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> Calculer Distance</a></li>
+                <li ng-repeat="item in items" ng-class="{'active': item.id == states.activeItem}" ng-click="states.activeItem = item.id"><a href="{{item.link}}"><span class="{{item.icon}}" aria-hidden="true"></span> {{item.title}}</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#!/register">Sign In</a></li>
-                <li><a href="#!/login">Log In</a></li>
+                <li ng-repeat="itemr in itemsr" ng-class="{'active': itemr.id == states.activeItem}" ng-click="states.activeItem = itemr.id"><a href="{{itemr.link}}">{{itemr.title}}</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

@@ -1,12 +1,12 @@
 
 <div class="panel panel-default">
     <!-- Default panel contents -->
-    <div class="panel-heading">Calcul de distance entre deux planetes </div>
+    <div class="panel-heading">CALCUL DE DISTANCE ENTRE DEUX PLANETES </div>
     <div class="panel-body">
         <div class="row">
 
             <div class="col-md-4"><div class="col-md-6"><img class="imgplanete imgPlaneteLeft" src="{{form[0].img}}"></div><div class="col-md-6">{{form[0].nomPlanete}}</div></div>
-            <div class="col-md-4 resultat">{{distance| number }} {{ unitekm}} <br>{{distanceUA| number }} {{uniteUA}} </div>
+            <div class="col-md-4 resultat">{{info}} {{distance| number }} {{ unitekm}} <br>{{distanceUA| number }} {{uniteUA}} </div>
             <div class="col-md-4"><div class="col-md-6">{{form[1].nomPlanete}}</div>  <div class="col-md-6"><img class="imgplanete imgPlaneteRight" src="{{form[1].img}}"></div></div>
 
         </div>
@@ -14,10 +14,10 @@
 
     <!-- Table -->
     <table class="table">
-        <thead> <tr> <th>ID</th> <th>Planete</th> <th>Distance planete/soleil</th> <th>Sélectionner</th> <th>Détails</th> </tr> </thead>
+        <thead>  <th>Planete</th> <th>Distance planete/soleil</th> <th>Sélectionner</th> <th>Détails</th> </tr> </thead>
         <tbody>
             <tr id="line{{planete.idPlanete}}" ng-repeat="planete in Planetes">
-                <th scope="row">{{planete.idPlanete}}</th> <td>{{planete.nomPlanete}}</td> <td>{{planete.distanceSoleil}} km</td>
+                <td>{{planete.nomPlanete}}</td> <td>{{planete.distanceSoleil}} km</td>
                 <td><input id="input{{planete.idPlanete}}" ng-model="planete.checked"  ng-change="listePlaneteCtrl.selectPlanete(planete)" type="checkbox" aria-label="..." value="yes"></td>
                 <td class="bs-glyphicons">
                     <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
